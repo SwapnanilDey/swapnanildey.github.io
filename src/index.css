@@ -133,9 +133,45 @@ transition:.3s;
 .skill-card:hover{transform:translateY(-5px)}
 .skill-icon{font-size:28px;color:#38bdf8}
 
-.company-header{padding:35px;text-align:center;margin-bottom:35px}
+/* .company-header{padding:35px;text-align:center;margin-bottom:35px}
 .company-info{display:flex;align-items:center;justify-content:center;gap:15px}
-.company-logo{width:50px;height:50px;object-fit:contain}
+.company-logo{width:50px;height:50px;object-fit:contain} */
+.company-header{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  text-align:center;
+  gap:12px;
+  padding:32px;
+}
+
+.company-info{
+  display:flex;
+  align-items:center;
+  gap:20px;
+}
+
+.company-logo{
+  width:70px;
+  height:auto;
+}
+
+@media (max-width:768px){
+
+  .company-info{
+    flex-direction:column;
+    gap:12px;
+  }
+
+  .company-info h3{
+    font-size:1.8rem;
+    line-height:1.2;
+  }
+
+  .company-header p{
+    font-size:1.1rem;
+  }
+}
 
 .experience-projects{display:flex;flex-direction:column;gap:25px}
 .project-experience-card{padding:32px}
